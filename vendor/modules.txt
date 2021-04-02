@@ -1,0 +1,15 @@
+# github.com/inconshreveable/mousetrap v1.0.0
+github.com/inconshreveable/mousetrap
+# github.com/sirupsen/logrus v1.8.1
+## explicit
+# github.com/spf13/cobra v1.1.1
+## explicit
+github.com/spf13/cobra
+# github.com/spf13/pflag v1.0.5
+github.com/spf13/pflag
+# golang.org/x/mod v0.4.2
+## explicit
+# golang.org/x/sys v0.0.0-20210331175145-43e1dd70ce54
+## explicit
+# golang.org/x/tools/gopls v0.6.9
+## explicit
