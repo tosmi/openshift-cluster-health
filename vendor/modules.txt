@@ -2,6 +2,7 @@
 github.com/inconshreveable/mousetrap
 # github.com/sirupsen/logrus v1.8.1
 ## explicit
+github.com/sirupsen/logrus
 # github.com/spf13/cobra v1.1.1
 ## explicit
 github.com/spf13/cobra
@@ -11,5 +12,8 @@ github.com/spf13/pflag
 ## explicit
 # golang.org/x/sys v0.0.0-20210331175145-43e1dd70ce54
 ## explicit
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
 # golang.org/x/tools/gopls v0.6.9
 ## explicit

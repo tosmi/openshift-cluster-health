@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/tosmi/openshift-cluster-health/pkg/version"
 )
@@ -15,13 +16,13 @@ var (
 	}
 )
 
-func init(
-	log.SetOutput(os.Stdout)
-)
+func init() {
+	log.SetLevel(log.DebugLevel)
+}
 
 func main() {
 
 	fmt.Println("Hello World! This is version", version.VERSION, version.GITCOMMIT)
-
+	log.Debug("test")
 	rootCmd.Execute()
 }
