@@ -1,11 +1,8 @@
 package main
 
 import (
-	"fmt"
-
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"github.com/tosmi/openshift-cluster-health/pkg/version"
 )
 
 var (
@@ -18,11 +15,12 @@ var (
 
 func init() {
 	log.SetLevel(log.DebugLevel)
+	versionTemplate := `{{printf "%s: %s - version %s\n" .Name .Short .Version}}`
+	rootCmd.SetVersionTemplate(versionTemplate)
 }
 
 func main() {
-
-	fmt.Println("Hello World! This is version", version.VERSION, version.GITCOMMIT)
-	log.Debug("test")
+	//fmt.Println("Hello World! This is version", version.VERSION, version.GITCOMMIT)
+	//log.Debug("test")
 	rootCmd.Execute()
 }
